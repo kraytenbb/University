@@ -1,22 +1,82 @@
-import random
-
-
-answer = random.randrange(1, 100)
-print(f'Компьютер загадал число: {answer}')
-count = 0
-while True:
-    count += 1
-    user_answer = input('Введите число: ')
-    if user_answer.lower() == 'выход':
-        print('Выход из игры!')
-        break
-    while not user_answer.isdigit():
-        print('Ошибка! Введите число!')
-        user_answer = input('Введите число: ')
-    if int(user_answer) == answer:
-        print(f'Поздравляем! Вы угадали число за {count} попыток!')
-        break
-    elif int(user_answer) > answer:
-        print('Ваше число больше')
-    else:
-        print('Ваше число меньше')
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOm/BOEl4QTc9SDZDxmYmWO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/kraytenbb/University/blob/main/Tasks/%D0%94%D0%BE%D0%BF%D0%BE%D0%BB%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5%20%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0mXdBQF85bje",
+        "outputId": "f6ee4deb-67c8-46c9-97bb-9a4b7eb05534"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Компьютер загадал число: 96\n",
+            "Введите число: 78\n",
+            "Ваше число меньше\n",
+            "Введите число: вр\n",
+            "Ошибка! Введите число!\n",
+            "Введите число: 97\n",
+            "Ваше число больше\n",
+            "Введите число: 96\n",
+            "Поздравляем! Вы угадали число за 3 попыток!\n"
+          ]
+        }
+      ],
+      "source": [
+        "import random\n",
+        "\n",
+        "\n",
+        "answer = random.randrange(1, 100)\n",
+        "print(f'Компьютер загадал число: {answer}')\n",
+        "count = 0\n",
+        "while True:\n",
+        "    count += 1\n",
+        "    user_answer = input('Введите число: ')\n",
+        "    if user_answer.lower() == 'выход':\n",
+        "        print('Выход из игры!')\n",
+        "        break\n",
+        "    while not user_answer.isdigit():\n",
+        "        print('Ошибка! Введите число!')\n",
+        "        user_answer = input('Введите число: ')\n",
+        "    if int(user_answer) == answer:\n",
+        "        print(f'Поздравляем! Вы угадали число за {count} попыток!')\n",
+        "        break\n",
+        "    elif int(user_answer) > answer:\n",
+        "        print('Ваше число больше')\n",
+        "    else:\n",
+        "        print('Ваше число меньше')\n"
+      ]
+    }
+  ]
+}
