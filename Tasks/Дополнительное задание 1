@@ -1,0 +1,22 @@
+import random
+
+
+answer = random.randrange(1, 100)
+print(f'Компьютер загадал число: {answer}')
+count = 0
+while True:
+    count += 1
+    user_answer = input('Введите число: ')
+    if user_answer.lower() == 'выход':
+        print('Выход из игры!')
+        break
+    while not user_answer.isdigit():
+        print('Ошибка! Введите число!')
+        user_answer = input('Введите число: ')
+    if int(user_answer) == answer:
+        print(f'Поздравляем! Вы угадали число за {count} попыток!')
+        break
+    elif int(user_answer) > answer:
+        print('Ваше число больше')
+    else:
+        print('Ваше число меньше')
