@@ -1,5 +1,5 @@
 import random
-from game_wheel.file_utils import load_words, load_record, save_record
+from game.file_utils import load_words, load_record, save_record
 
 def display_word(word, guessed_letters):
     return "".join(letter if letter in guessed_letters else "■" for letter in word)
