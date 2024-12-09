@@ -13,7 +13,6 @@ def load_words(file_path="words.txt"):
         raise Exception(f"Ошибка при загрузке слов: {e}")
 
 def load_record(file_path="record.txt"):
-    """Загружает текущий рекорд из файла."""
     if not os.path.exists(file_path):
         return 0
     try:
