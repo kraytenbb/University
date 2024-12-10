@@ -2,13 +2,13 @@ import random
 from file_utils import load_words, load_record, save_record
 
 def display_word(word, guessed_letters):
-    return "".join(letter if letter in guessed_letters else "■" for letter in word)
+    return " ".join(letter if letter in guessed_letters else "■" for letter in word)
 
 def play_round(word, lives):
     guessed_letters = set()
     while lives > 0:
         print(f"\nСлово: {display_word(word, guessed_letters)}")
-        print(f"Количество жизней: {'♥' * lives}")
+        print(f"Количество жизней: {'♥ ' * lives}")
         guess = input("Назовите букву или слово целиком: ").strip().lower()
         if not guess.isalpha():
             print("Ошибка ввода. Введите букву или слово.")
