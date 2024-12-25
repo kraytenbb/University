@@ -1,0 +1,36 @@
+Исходное слово | Перевод | Количество упоминаний
+не | Not | 4
+по | by | 3
+я | I | 3
+привет | Hello | 2
+мочь | be able | 2
+скинуть | throw off | 2
+ты | You | 2
+лекция | lecture | 1
+матанализ | math analysis | 1
+а | A | 1
+то | That | 1
+успеть | be on time | 1
+на | on | 1
+она | she | 1
+сейчас | Now | 1
+*png* | *png* | 1
+хороший | good | 1
+да | yes | 1
+за | for | 1
+что | What | 1
+стоить | cost | 1
+делать | do | 1
+домашка | homework | 1
+прошлый | last | 1
+практике? | practice? | 1
+линейный | linear | 1
+алгебра | algebra | 1
+делал, | did, | 1
+но | But | 1
+скинуть, | throw off, | 1
+так | So | 1
+как | How | 1
+дом | house | 1
+приехать | come | 1
+около | around | 1
